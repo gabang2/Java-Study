@@ -9,5 +9,4 @@ public class OperatorTest {
 		System.out.println(lastScore);
 		System.out.println(gameScore);
 	}
-
 }
