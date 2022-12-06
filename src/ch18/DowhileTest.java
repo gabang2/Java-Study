@@ -8,12 +8,10 @@ public class DowhileTest {
 		int input;
 		int sum = 0;
 		
-		input = scanner.nextInt();
-		
-		while(input != 0) {
+		do {
+			input = scanner.nextInt();
 			sum += input;
-			input = scanner.nextInt()
-;		}
+		} while(input!= 0);
 		
 		System.out.println(sum);
 		
