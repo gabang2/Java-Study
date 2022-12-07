@@ -26,7 +26,7 @@ public class Person {
 	public static void main(String[] args) {
 		Person person = new Person();
 		person.showPerson();
-		System.out.println(person);
-		System.out.println(person.getPerson());
+		System.out.println(person); // ch12.Person@515f550a
+		System.out.println(person.getPerson()); // ch12.Person@515f550a
 	}
 }
