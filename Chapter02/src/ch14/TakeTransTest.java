@@ -19,7 +19,5 @@ public class TakeTransTest {
 		
 		bus100.showBusInfo();
 		greenSubway.showSubwayInfo();
-
 	}
-
 }
