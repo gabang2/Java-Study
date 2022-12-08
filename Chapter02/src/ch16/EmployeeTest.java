@@ -11,7 +11,7 @@ public class EmployeeTest {
 		
 		System.out.println(employee.getEmployeeName()+"님의 사번은" + employee.getEmployeeId()+"입니다.");
 		System.out.println(employee2.getEmployeeName()+"님의 사번은" + employee2.getEmployeeId()+"입니다.");
-		System.out.println(Employee.serialNum); // static 변수는 인스턴스 없이 사용할 수 있다.
+		System.out.println(Employee.getSerialNum()); // static 변수는 인스턴스 없이 사용할 수 있다.
 	}
 
 }
