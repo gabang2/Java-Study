@@ -18,26 +18,16 @@ public class ObjectCopyTest {
 		copyLibrary[3] = new Book();
 		copyLibrary[4] = new Book();
 		
+		// 깊은 복사
 		for(int i=0; i<library.length; i++) {
 			copyLibrary[i].setAuthor(library[i].getAuthor());
 			copyLibrary[i].setTitle(library[i].getTitle());
 		}
 		
+		// 얕은 복사(밑의 주석을 풀기)
 		// System.arraycopy(library, 0, copyLibrary, 0, 5);
 		
-		for(Book book:library) {
-			System.out.println(book);
-			book.showInfo();
-		}
-		System.out.println("===============");
-		
-		for(Book book:copyLibrary) {
-			System.out.println(book);
-			book.showInfo();
-		}
-		// OBject copy해보기
-		System.out.println("===============");
-		
+		// 얕은 복사의 경우, 복사한 copyLibrary도 값이 변경되느 것을 알 수 있음.
 		library[0].setAuthor("가방이");
 		library[0].setTitle("가방이의 블로그");
 		
