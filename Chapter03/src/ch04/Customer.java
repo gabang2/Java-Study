@@ -3,7 +3,7 @@ package ch04;
 public class Customer {
 	private int customerId;
 	private String customerName;
-	private int bonusPoint;
+	protected int bonusPoint;
 	protected String customerGrade;
 	protected double bonusRatio;
 	
@@ -18,8 +18,9 @@ public class Customer {
 		this.customerName = customerName;
 	}
 	
-	public void calcBonus(int price) {
+	public int calcPrice(int price) {
 		this.bonusPoint += price * this.bonusRatio;
+		return price;
 	}
 	
 	public String customerInfo() {

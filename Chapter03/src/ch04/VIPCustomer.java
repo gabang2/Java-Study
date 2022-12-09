@@ -19,7 +19,10 @@ public class VIPCustomer extends Customer{
 		agentName = "이미영 팀장";
 	}
 	
-	public void calcPrice(int price) {
-		price -= price * this.salesRatio;
+	@Override
+	public int calcPrice(int price) {
+		this.bonusPoint += price * bonusRatio;
+		price -= (int)(price * salesRatio);
+		return price;
 	}
 }
