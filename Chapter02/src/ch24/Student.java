@@ -7,11 +7,12 @@ public class Student {
 	
 	private int studentId;
 	private String studentName;
-	private ArrayList<Subject> studentSubjects = new ArrayList<>();
+	private ArrayList<Subject> studentSubjects;
 	
 	public Student(int studentId, String studentName) {
 		this.studentId = studentId;
 		this.studentName = studentName;
+		this.studentSubjects = new ArrayList<>();
 	}
 	
 	public void addSubject(String subjectName, int subjectScore) {
