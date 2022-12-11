@@ -20,7 +20,7 @@ public class CustomerTest {
 		
 		Customer hello = new VIPCustomer(); // 업캐스팅
 		VIPCustomer hello2 = (VIPCustomer)hello; // 다운캐스팅
-		System.out.println("==== 업다운캐스팅 확인 ====")
+		System.out.println("==== 업다운캐스팅 확인 ====");
 		System.out.println(hello instanceof VIPCustomer);
 		System.out.println(hello instanceof Customer);
 		System.out.println(hello2 instanceof VIPCustomer);
