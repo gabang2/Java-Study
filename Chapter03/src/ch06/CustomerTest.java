@@ -18,6 +18,19 @@ public class CustomerTest {
 		customerList.add(customer4);
 		customerList.add(customer5);
 		
+		Customer hello = new VIPCustomer(); // 업캐스팅
+		VIPCustomer hello2 = (VIPCustomer)hello; // 다운캐스팅
+		System.out.println("==== 업다운캐스팅 확인 ====");
+		System.out.println(customer3 instanceof VIPCustomer);
+		System.out.println(hello instanceof Customer);
+		System.out.println(hello2 instanceof VIPCustomer);
+		System.out.println(hello2 instanceof Customer);
+		
+		if ( customer3 instanceof GoldCustomer) {
+			GoldCustomer vc2 = (GoldCustomer)customer3;
+			System.out.println(customer3.customerInfo());
+		}
+		
 		for(Customer customer : customerList) {
 			System.out.println(customer.customerInfo());
 		}
@@ -28,5 +41,7 @@ public class CustomerTest {
 			System.out.println(customer.getCustomerName() + "님이" + cost + "를 지불하였습니다.");
 			System.out.println(customer.getCustomerName() + "님의 현재 보너스 포인트는" + customer.bonusPoint + "입니다.");
 		}
+		
+		// 코드를 고칠 때 가장 불편한 점은, 코드가 잘 돌아가는지 모르기 때문에 힘들다 -> 따라서 클래스를 이용하여 확장성이 좋게 만드는 것이 좋음.
 	}
 }

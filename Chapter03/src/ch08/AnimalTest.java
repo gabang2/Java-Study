@@ -1,4 +1,4 @@
-package ch06;
+package ch08;
 
 import java.util.ArrayList;
 
@@ -53,6 +53,30 @@ public class AnimalTest {
 		
 		for(Animal animal:animalList) {
 			animal.move();
+		}
+		
+		AnimalTest test = new AnimalTest();
+		test.testDownCasting(animalList);
+	}
+	
+	public void testDownCasting(ArrayList<Animal> list) {
+		for(int i=0; i<list.size(); i++) {
+			Animal animal = list.get(i);
+			if(animal instanceof Human) {
+				Human human = (Human) animal;
+				human.readBook();
+			}
+			else if(animal instanceof Tiger) {
+				Tiger tiger = (Tiger) animal;
+				tiger.hunting();
+			}
+			else if(animal instanceof Eagle) {
+				Eagle eagle = (Eagle) animal;
+				eagle.flying();
+			}
+			else {
+				System.out.println("unsuported type");
+			}
 		}
 	}
 	
