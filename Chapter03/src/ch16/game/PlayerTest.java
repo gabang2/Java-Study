@@ -3,16 +3,17 @@ package ch16.game;
 public class PlayerTest {
 
 	public static void main(String[] args) {
-		BeginnerLevel beginner = new BeginnerLevel();
-		AdvancedLevel advanced = new AdvancedLevel();
-		SuperLevel supered = new SuperLevel();
 		
-		Player player = new Player(beginner);
-		player.play();
+		Player player = new Player();
+		player.play(1);
+		
+		AdvancedLevel advanced = new AdvancedLevel();
 		player.upgradeLevel(advanced);
-		player.play();
+		player.play(2);
+		
+		SuperLevel supered = new SuperLevel();
 		player.upgradeLevel(supered);
-		player.play();
+		player.play(3);
 		
 	}
 
