@@ -1,6 +1,0 @@
-package ch13.domain.userinfo.dao;
-
-public interface userInfoDao {
-	void insertUserInfo(serInfo userInfo);
-	
-}

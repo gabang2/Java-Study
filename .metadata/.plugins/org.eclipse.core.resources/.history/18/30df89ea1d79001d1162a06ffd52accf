@@ -1,5 +1,0 @@
-package ch13review.domain.userinfo.dao;
-
-public interface UserInfoDao {
-
-}
