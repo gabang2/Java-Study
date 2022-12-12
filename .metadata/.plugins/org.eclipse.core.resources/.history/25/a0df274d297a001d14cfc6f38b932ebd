@@ -1,0 +1,22 @@
+package ch16.game;
+
+public class Player {
+	PlayerLevel level;
+	
+	public Player(PlayerLevel level) {
+		this.level = level;
+	}
+	
+	String getLevel() {
+		return null;
+	}
+	
+	void upgradeLevel(PlayerLevel playerLevel) {
+		this.level = playerLevel;
+	}
+	
+	final void play(int count) {
+		level.go(count);
+	}
+	
+}

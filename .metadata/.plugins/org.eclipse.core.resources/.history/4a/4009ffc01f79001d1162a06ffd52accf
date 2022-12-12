@@ -1,0 +1,5 @@
+package ch13review.web.userinfo;
+
+public class UserInfoClient {
+
+}

@@ -1,0 +1,5 @@
+		Customer customerLee = new Customer();
+		customerLee.setCustomerName("ÀÌ¼ø½Å");
+		customerLee.setCustomerId(001020);
+		customerLee.bonusPoint = 100;
+		System.out.println(customerLee.showCustomerInfo());

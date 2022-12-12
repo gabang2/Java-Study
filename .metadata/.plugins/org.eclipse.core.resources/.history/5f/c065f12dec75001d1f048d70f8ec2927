@@ -1,0 +1,16 @@
+package ch15;
+
+public class Taxy {
+	String subwayName;
+	int subwayMoneyTotal;
+	int subwayPassengerCount;
+	
+	public Taxy(String subwayName) {
+		this.subwayName = subwayName;
+	}
+	
+	public void take(int subwayMoney) {
+		subwayMoneyTotal += subwayMoney;
+		subwayPassengerCount++;
+	}
+}

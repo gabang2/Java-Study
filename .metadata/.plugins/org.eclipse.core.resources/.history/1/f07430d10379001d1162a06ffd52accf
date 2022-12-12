@@ -1,0 +1,9 @@
+package ch13.domain.userinfo.dao;
+
+public interface UserInfo {
+	
+	void insertUserInfo(UserInfo userinfo);
+	void updateUserInfo(UserInfo userinfo);
+	void deleteUserInfo(UserInfo userinfo);
+	
+}

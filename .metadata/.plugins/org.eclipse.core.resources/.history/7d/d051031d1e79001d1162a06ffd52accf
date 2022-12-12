@@ -1,0 +1,7 @@
+package ch13review.domain.userinfo.dao;
+
+public interface UserInfoDao {
+	UserInfo insertUserInfo(UserInfo userInfo);
+	UserInfo updateUserInfo(UserInfo userInfo);
+	UserInfo deleteUserInfo(UserInfo userInfo);
+}

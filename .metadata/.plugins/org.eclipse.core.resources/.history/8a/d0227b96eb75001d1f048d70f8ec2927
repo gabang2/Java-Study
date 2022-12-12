@@ -1,0 +1,17 @@
+package ch15;
+
+public class Bus {
+	String busName;
+	int busMoney;
+	int busMoneyTotal;
+	int busPassengerCount;
+	
+	public Bus(String busName) {
+		this.busName = busName;
+	}
+	
+	public void take() {
+		busMoneyTotal += busMoney;
+		busPassengerCount++;
+	}
+}

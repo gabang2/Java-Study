@@ -1,0 +1,5 @@
+package ch13review.domain.userinfo.dao.mysql;
+
+public class UserInfoMySqlDao {
+
+}

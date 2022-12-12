@@ -1,0 +1,11 @@
+package ch19;
+
+public class Car {
+	private int carNum=10000;
+	public Car() {
+		carNum++;
+	}
+	public int getCarNum() {
+		return carNum;
+	}
+}
