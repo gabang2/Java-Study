@@ -21,7 +21,6 @@ public class Student implements Cloneable{
 
 	@Override
 	public int hashCode() {
-		
 		return studentNum; // 진짜 해쉬코드 값이 없어지지는 않음.
 	}
 
@@ -45,7 +44,4 @@ public class Student implements Cloneable{
 		// TODO Auto-generated method stub
 		return super.clone();
 	}
-	
-	
-	
 }
