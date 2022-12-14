@@ -15,8 +15,6 @@ public class MyListQueueTest {
 		System.out.println(listQueue.deQueue());
 		
 		listQueue.printQueue();
-		
-		
-	}
 
+	}
 }
