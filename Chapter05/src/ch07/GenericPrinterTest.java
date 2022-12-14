@@ -1,4 +1,4 @@
-package ch06;
+package ch07;
 
 public class GenericPrinterTest {
 
@@ -10,6 +10,8 @@ public class GenericPrinterTest {
 		powderPrinter.setMaterial(powder);
 		Powder p = powderPrinter.getMaterial();
 		System.out.println(powderPrinter.toString());
+		
+		p.doPrinting();
 	}
 
 }
