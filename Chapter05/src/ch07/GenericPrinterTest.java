@@ -13,5 +13,4 @@ public class GenericPrinterTest {
 		
 		p.doPrinting();
 	}
-
 }
