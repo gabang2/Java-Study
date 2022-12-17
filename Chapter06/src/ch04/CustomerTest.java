@@ -5,9 +5,9 @@ import java.util.stream.Stream;
 
 public class CustomerTest {
 	public static void main(String[] args) {
-		Customer customer1 = new Customer(1, "이순신", 40);
-		Customer customer2 = new Customer(2, "김유신", 20);
-		Customer customer3 = new Customer(3, "홍길동", 13);
+		Customer customer1 = new Customer("이순신", 40);
+		Customer customer2 = new Customer("김유신", 20);
+		Customer customer3 = new Customer("홍길동", 13);
 		
 		ArrayList<Customer> customerList = new ArrayList<Customer>();
 		customerList.add(customer1);
@@ -17,7 +17,7 @@ public class CustomerTest {
 		System.out.println("고객 명단을 출력합니다.");
 		System.out.println("고객번호\t 이름\t 나이\t 비용\t");
 		Stream<Customer> customerStreamList1 = customerList.stream();
-		customerStreamList1.forEach(e -> e.customerShow());
+		customerStreamList1.forEach(e -> System.out.println(e));
 
 		System.out.println("\n여행의 총 비용을 계산합니다.");
 		Stream<Customer> customerStreamList2 = customerList.stream();
