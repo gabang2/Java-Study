@@ -3,6 +3,7 @@ package ch03;
 import java.util.Arrays;
 import java.util.function.BinaryOperator;
 
+
 class CompareString implements BinaryOperator<String>{
 
 	@Override
@@ -10,9 +11,10 @@ class CompareString implements BinaryOperator<String>{
 		if(s1.getBytes().length >= s2.getBytes().length) {
 			return s1;
 		} else return s2;
-	}
-	
+	}	
 }
+
+
 public class ReduceTest {
 	public static void main(String[] args) {
 		String[] greetings = {"안녕하세요~~~", "hello", "good morning", "반갑습니다"};
@@ -25,3 +27,4 @@ public class ReduceTest {
 		System.out.println(Arrays.stream(greetings).reduce(new CompareString()).get());
 	}
 }
+

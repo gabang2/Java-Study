@@ -19,7 +19,12 @@ public class ArrayListStreamTest {
 		sList.parallelStream().sorted().forEach(s -> System.out.print(s + " "));
 		sList.stream().map(s -> s.length()).forEach(n -> System.out.print(n));
 		
-		
+		// 중간 연산 map(), filter()
+		List<String> strArr = new ArrayList<String>();
+		strArr.add("gayeong");
+		strArr.add("nayeong");
+		Stream<String> stream2 = strArr.stream();
+		stream2.map(i -> i.concat("예쁘다.")).forEach(s -> System.out.println(s));
 	}
 
 }
