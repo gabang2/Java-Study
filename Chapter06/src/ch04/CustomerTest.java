@@ -27,11 +27,6 @@ public class CustomerTest {
 		System.out.println("\n고객 중 20세 이상인 사람을 이름으로(가나다순)정렬하여 출력합니다.");
 		Stream<Customer> customerStreamList3 = customerList.stream();
 		System.out.print("고객 이름 : ");
-		customerStreamList3.filter(f -> f.getCustomerAge() >= 20).forEach(e -> System.out.print(e.getCustomerName()+ " "));
-		
-		
-		
-		
-		
+		customerStreamList3.filter(f -> f.getCustomerAge() >= 20).map(c-> c.getCustomerName()).sorted().forEach(e -> System.out.print(e + " "));
 	}
 }

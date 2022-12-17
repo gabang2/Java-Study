@@ -44,6 +44,4 @@ public class Customer{
 	public String toString() {
 		return customerId + "\t" + customerName + "\t" + customerAge + "\t" + customerPrice;
 	}
-	
-
 }
