@@ -3,11 +3,11 @@ package ch01;
 public class IDFormatTest {
 	
 	private String userID;
-
+	
 	public String getUserID() {
 		return userID;
 	}
-
+	
 	public void setUserID(String userID) throws IDFormatException {
 		if (userID == null) {
 			throw new IDFormatException("아이디는 null일 수 없습니다.");
@@ -16,7 +16,7 @@ public class IDFormatTest {
 		}
 		this.userID = userID;
 	}
-
+	
 	public static void main(String[] args) {
 		IDFormatTest test = new IDFormatTest();
 		String id = null;
