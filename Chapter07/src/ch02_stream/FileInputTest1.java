@@ -7,25 +7,19 @@ import java.io.IOException;
 public class FileInputTest1 {
 	public static void main(String[] args) {
 		
-		FileInputStream fis = null;
-		
-		try {
-			fis = new FileInputStream("input.txt");
+		try (FileInputStream fis = new FileInputStream("input2.txt")){
 			
 			int i;
-			while((i = fis.read()) != -1) {
-				System.out.println((char)i);
+			byte[] bs = new byte[10];
+			while((i = fis.read(bs)) != -1) {
+				for(byte b : bs) {
+					System.out.print((char)b);
+				}
+				System.out.println();
 			}
+			
 		} catch (IOException e) {
 			e.printStackTrace(); // 어디서 에러가 났는지 확인할 수 있음
-		} finally {
-			try {
-				fis.close();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
 		}
-		
-		System.out.println("end");
 	}
 }
